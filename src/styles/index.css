@@ -18,6 +18,13 @@
   /* Текст */
   --text-white: #FFFFFF;
 
+  --text-xs: 1.3rem;    /* 13px */
+  --text-sm: 1.5rem;    /* 15px */
+  --text-base: 1.6rem;  /* 16px */
+  --text-lg: 1.7rem;    /* 17px */
+  --text-xl: 3rem;      /* 30px */
+  --text-xxl: 4rem;     /* 40px */
+
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -33,6 +40,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -44,6 +56,7 @@ a:hover {
 
 body {
   margin: 0;
+  font-size: var(--text-base);
   min-width: 320px;
   min-height: 100vh;
 }

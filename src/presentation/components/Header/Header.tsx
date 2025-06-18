@@ -1,7 +1,7 @@
-import styles from './Home.module.css';
+import styles from './Header.module.css';
 
-export const Home = () => {
-
+export const Header = () => {
+  
   return (
     <div className={styles.wrapper}>
       asdf
