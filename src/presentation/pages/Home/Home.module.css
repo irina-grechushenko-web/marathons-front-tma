@@ -2,3 +2,50 @@
   height: 100vh;
   background-color: var(--neutral-300);
 }
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  margin: 15px 15px 0 15px;
+  padding: 17px 24px;
+  border-radius: 32px;
+  color: var(--primary-100);
+  background-color: var(--text-white);  
+}
+
+.card a:active {
+  color: var(--primary-100);
+  background-color: var(--text-white);  
+}
+.card a:hover {
+  color: var(--primary-100);
+  background-color: var(--text-white);  
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.time {
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
+.text {
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+
+.count {
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--text-sm);
+  font-weight: 400;
+}

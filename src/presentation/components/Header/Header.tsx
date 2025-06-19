@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProp> = ({title, desc, avatar = false, backg
         miniApp.setHeaderColor('#184A3F')
       }
       if( background==='marathon'){
-        miniApp.setHeaderColor('#ffa622')
+        miniApp.setHeaderColor('#FDAE37')
       }
       if( background==='reviews'){
         miniApp.setHeaderColor('#FDAE37')

@@ -1,5 +1,6 @@
 import { Header } from '@src/presentation/components/Header';
 import styles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
 
@@ -11,6 +12,23 @@ export const Home = () => {
         avatar
         background={'main'}
       />
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <Link to={'/bad-girl'}>
+            <div className={styles.header}>
+              <div className={styles.name}>Плохая девочка</div>
+              <div className={styles.time}>6 дней</div>
+            </div>
+            <div className={styles.desc}>
+              <div className={styles.text}>
+                Перестань быть удобной,<br/>
+                начни играть по своим правилам
+              </div>
+              <div className={styles.count}>{'0'}/6</div>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
