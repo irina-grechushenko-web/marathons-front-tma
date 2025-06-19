@@ -21,7 +21,7 @@ export function TMAInit(): void {
   }
 
   if (miniApp.setHeaderColor.isAvailable()) {
-    miniApp.setHeaderColor('#aaaaaa')
+    miniApp.setHeaderColor('#184A3F')
   }
   void viewport
     .mount()

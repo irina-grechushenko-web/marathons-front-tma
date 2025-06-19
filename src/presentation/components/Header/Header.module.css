@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 185px;
+  padding-left: 14px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+}
+
+.wrapper--main {
+  background: var(--primary-200);
+}
+
+.wrapper--marathon {
+  background: var(--accent-300);
+}
+
+.wrapper--reviews {
+  background: var(--accent-300);
+}
+
+.title {
+  font-size: var(--text-xl);
+  color: var(--text-white);
+  z-index: 1;
+}
+.description {
+  margin-bottom: 33px;
+  font-size: var(--text-base);
+  color: var(--text-white);
+  z-index: 1;
+}
+
+.title--main {
+  font-weight: 700;
+}
+.title--marathon {
+  font-weight: 800;
+}
+.title--reviews {
+  font-weight: 800;
+}
+
+.desc--main {
+  font-weight: 500;
+}
+.desc--marathon {
+  font-weight: 600;
+}
+.desc--reviews {
+  font-weight: 600;
+}
+
+.avatar {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-top: 34px;
+  margin-bottom: 9px;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.line {
+  position: absolute;
+}
+
+.line--main {
+  top: -18px;
+  right: 0;
+  z-index: 0;
+}
+.line--marathon {
+  top: -18px;
+  right: 0;
+  z-index: 0;
+}
+.line--reviews {
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
