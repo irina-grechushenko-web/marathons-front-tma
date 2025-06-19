@@ -1,4 +1,55 @@
 .wrapper {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   background-color: var(--neutral-300);
+}
+
+.payment {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  left: 14px;
+  right: 14px;
+  width: auto;
+  height: 56px;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  border-radius: 32px;
+  color: var(--text-white);
+  background-color: var(--accent-300);
+}
+
+.payment:hover {
+  color: var(--text-white);
+}
+
+.card {
+  margin-top: 16px;
+  height: 110px;
+}
+.card a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 14px;
+  padding: 17px 24px;
+  border-radius: 32px;
+  color: var(--neutral-500);
+  background-color: var(--text-white);
+}
+
+.card a:hover  {
+  color: var(--neutral-500);
+}
+
+.title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.desc {
+  font-size: var(--text-xs);
+  font-weight: 400;
 }

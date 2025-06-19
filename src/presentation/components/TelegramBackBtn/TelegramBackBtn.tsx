@@ -21,7 +21,6 @@ export function BackButton() {
 
   useEffect(() => {
     const handleClick = () => {
-      console.log('BackButton clicked');
       window.history.back();
     };
 

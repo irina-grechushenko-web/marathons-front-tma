@@ -1,6 +1,7 @@
 import { Header } from '@src/presentation/components/Header';
-import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
+import { Routes } from '@src/routes';
+import styles from './Home.module.css';
 
 export const Home = () => {
 
@@ -14,7 +15,7 @@ export const Home = () => {
       />
       <div className={styles.cards}>
         <div className={styles.card}>
-          <Link to={'/bad-girl'}>
+          <Link to={Routes.Badgirl}>
             <div className={styles.header}>
               <div className={styles.name}>Плохая девочка</div>
               <div className={styles.time}>6 дней</div>
