@@ -4,6 +4,7 @@
 }
 
 .card a {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,4 +49,9 @@
   align-items: flex-end;
   font-size: var(--text-sm);
   font-weight: 400;
+}
+.icon {
+  position: absolute;
+  top: 23px;
+  right: 27px;
 }

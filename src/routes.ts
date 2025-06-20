@@ -1,5 +1,6 @@
 export const Routes = {
   Home: '/',
   Badgirl: '/bad-girl',
-  Reviews: '/reviews',
+  Reviews: '/bad-girl/reviews',
+  Diagnostics: '/bad-girl/diagnostics',
 } as const;

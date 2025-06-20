@@ -2,6 +2,7 @@ import { Header } from '@src/presentation/components/Header';
 import { Link } from 'react-router-dom';
 import { Routes } from '@src/routes';
 import styles from './Home.module.css';
+import { Icon } from '@src/presentation/components/Icon';
 
 export const Home = () => {
 
@@ -27,6 +28,7 @@ export const Home = () => {
               </div>
               <div className={styles.count}>{'0'}/6</div>
             </div>
+            <Icon name={'arrowRightFill'}  className={styles.icon}/>
           </Link>
         </div>
       </div>

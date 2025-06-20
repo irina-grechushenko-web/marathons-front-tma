@@ -1,0 +1,54 @@
+.card {
+  position: relative;
+  height: 110px;
+}
+
+.card--pending a,
+.card--close a {
+  cursor: default;
+  text-decoration: none;
+}
+
+.card a {
+  display: flex;
+  box-sizing: border-box; 
+  min-height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 14px;
+  padding: 17px 24px;
+  border-radius: 32px;
+  color: var(--neutral-500);
+  background-color: var(--text-white);
+}
+
+.card--finished a {
+  background-color: var(--neutral-100);
+}
+.card--pending a,
+.card--close a {
+  pointer-events: none;
+  user-select: none;
+  color: var(--neutral-400);
+}
+.card a:hover  {
+  color: var(--neutral-500);
+}
+
+.title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.desc {
+  width: 238px;
+  white-space: pre-line;
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+
+.icon {
+  position: absolute;
+  top: 20;
+  right: 35px;
+}
