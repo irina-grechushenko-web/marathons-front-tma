@@ -4,6 +4,7 @@ import { Home } from '@presentation/pages/Home';
 import { Badgirl } from './presentation/pages/Marathons/Badgirl/Main';
 import { Reviews } from './presentation/pages/Marathons/Badgirl/Reviews';
 import { Diagnostics } from './presentation/pages/Marathons/Badgirl/Diagnostics';
+import { Quiz } from './presentation/pages/Marathons/Badgirl/Quiz';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path={RoutesMap.Badgirl} element={<Badgirl />} />
         <Route path={RoutesMap.Reviews} element={<Reviews />} />
         <Route path={RoutesMap.Diagnostics} element={<Diagnostics />} />
+        <Route path={RoutesMap.Quiz} element={<Quiz />} />
       </Routes>
     </BrowserRouter>
   )

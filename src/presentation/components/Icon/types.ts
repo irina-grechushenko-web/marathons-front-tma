@@ -5,4 +5,6 @@ export type IconName =
   | 'timer'
   | 'arrowRight'
   | 'arrowRightFill'
+  | 'resultLine1'
+  | 'resultLine2'
   ;

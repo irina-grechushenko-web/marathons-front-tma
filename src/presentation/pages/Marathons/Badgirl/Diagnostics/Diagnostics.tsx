@@ -1,8 +1,10 @@
-import { BackButton } from '@src/presentation/components/TelegramBackBtn/TelegramBackBtn';
-import styles from './Diagnostics.module.css';
 import { useEffect, useRef, useState } from 'react';
 import { miniApp } from '@telegram-apps/sdk-react';
+import { BackButton } from '@src/presentation/components/TelegramBackBtn/TelegramBackBtn';
 import { Link } from 'react-router-dom';
+import styles from './Diagnostics.module.css';
+import { Routes } from '@src/routes';
+import { quizStore } from '@src/application/store/quizStore';
 
 export const Diagnostics = () => {
   const [pathLength, setPathLength] = useState(0);
@@ -10,6 +12,7 @@ export const Diagnostics = () => {
 
   useEffect(() => {
     miniApp.setHeaderColor('#F4E7D7');
+    quizStore.reset();
     
     const calculatePathLength = () => {
       if (pathRef.current) {
@@ -27,7 +30,7 @@ export const Diagnostics = () => {
       <BackButton />
       <div className={styles.svgContainer}>
         <svg 
-          width="100%" height="auto"
+          width="100%" height="275px"
           viewBox="0 0 375 275"
           preserveAspectRatio="none"
         >
@@ -65,7 +68,7 @@ export const Diagnostics = () => {
           Насколько синдром “Хорошей девочки” влияет на мою жизнь. 
         </p>
       </div>
-      <Link to={''} className={styles.payment}>Пройти {'>'}</Link>
+      <Link to={Routes.Quiz} className={styles.payment}>Пройти {'>'}</Link>
     </div>
   );
 };
