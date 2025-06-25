@@ -1,0 +1,21 @@
+.quote {
+  position: relative;
+  margin: 14px 14px 0 14px;
+  border-radius: 34px;
+  padding: 40px 30px;
+  background-color: var(--text-white);
+  color: var(--neutral-500);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.up {
+  position: absolute;
+  bottom: -14px;
+  right: 25px;
+}
+.down {
+  position: absolute;
+  top: -14px;
+  left: 25px;
+}

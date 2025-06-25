@@ -33,47 +33,54 @@ export const Badgirl = () => {
           iconName='arrowRight'
         />
         <MarathonItem 
+          title='Вводный день'
+          desc={`Разберём ситуации, когда вы \nавтоматически соглашались `} 
+          route={''}
+          status='open'
+
+        />
+        <MarathonItem 
           title='День 1'
           desc={`Разберём ситуации, когда вы \nавтоматически соглашались `} 
-          route={Routes.Reviews}
-          status='pending'
+          route={Routes.Day1}
+          status='open'
 
         />
         <MarathonItem 
           title='День 2'
           desc={`Зачем мы продолжаем играть \nроль «хорошей девочки»`} 
-          route={Routes.Reviews}
-          status='close'
+          route={Routes.Day2}
+          status='open'
         />
         <MarathonItem 
           title='День 3'
           desc={``} 
           route={Routes.Reviews}
-          status='open'
+          status='close'
         />
         <MarathonItem 
           title='Мини-иструкция'
           desc={`Как отказывать без вины`} 
           route={Routes.Reviews}
-          status='open'
+          status='close'
         />
         <MarathonItem 
           title='День 4'
           desc={``} 
           route={Routes.Reviews}
-          status='open'
+          status='close'
         />
         <MarathonItem 
           title='Примеры отказов'
           desc={``} 
           route={Routes.Reviews}
-          status='open'
+          status='close'
         />
         <MarathonItem 
           title='День 5'
           desc={`Как отказывать без вины`} 
           route={Routes.Reviews}
-          status='open'
+          status='close'
         />
       </div>
       <Link to={''} className={styles.payment}>Открыть доступ {'>'}</Link>

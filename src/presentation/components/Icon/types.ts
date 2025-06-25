@@ -7,4 +7,9 @@ export type IconName =
   | 'arrowRightFill'
   | 'resultLine1'
   | 'resultLine2'
+  | 'message-question'
+  | 'lamp-on'
+  | 'header-line'
+  | 'quote-down'
+  | 'quote-up'
   ;

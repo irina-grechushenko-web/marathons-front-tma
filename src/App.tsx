@@ -5,6 +5,8 @@ import { Badgirl } from './presentation/pages/Marathons/Badgirl/Main';
 import { Reviews } from './presentation/pages/Marathons/Badgirl/Reviews';
 import { Diagnostics } from './presentation/pages/Marathons/Badgirl/Diagnostics';
 import { Quiz } from './presentation/pages/Marathons/Badgirl/Quiz';
+import { Day1 } from './presentation/pages/Marathons/Badgirl/Day1';
+import { Day2 } from './presentation/pages/Marathons/Badgirl/Day2';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path={RoutesMap.Reviews} element={<Reviews />} />
         <Route path={RoutesMap.Diagnostics} element={<Diagnostics />} />
         <Route path={RoutesMap.Quiz} element={<Quiz />} />
+        <Route path={RoutesMap.Day1} element={<Day1 />} />
+        <Route path={RoutesMap.Day2} element={<Day2 />} />
       </Routes>
     </BrowserRouter>
   )
