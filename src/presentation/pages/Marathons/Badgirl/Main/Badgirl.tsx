@@ -55,20 +55,20 @@ export const Badgirl = () => {
         <MarathonItem 
           title='День 3'
           desc={``} 
-          route={Routes.Reviews}
-          status='close'
+          route={Routes.Day3}
+          status='open'
         />
         <MarathonItem 
           title='Мини-иструкция'
           desc={`Как отказывать без вины`} 
-          route={Routes.Reviews}
-          status='close'
+          route={Routes.Instructions}
+          status='open'
         />
         <MarathonItem 
           title='День 4'
           desc={``} 
-          route={Routes.Reviews}
-          status='close'
+          route={Routes.Day4}
+          status='open'
         />
         <MarathonItem 
           title='Примеры отказов'

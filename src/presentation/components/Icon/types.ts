@@ -12,4 +12,6 @@ export type IconName =
   | 'header-line'
   | 'quote-down'
   | 'quote-up'
+  | 'like'
+  | 'dislike'
   ;

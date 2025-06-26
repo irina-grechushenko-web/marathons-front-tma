@@ -7,6 +7,9 @@ import { Diagnostics } from './presentation/pages/Marathons/Badgirl/Diagnostics'
 import { Quiz } from './presentation/pages/Marathons/Badgirl/Quiz';
 import { Day1 } from './presentation/pages/Marathons/Badgirl/Day1';
 import { Day2 } from './presentation/pages/Marathons/Badgirl/Day2';
+import { Day3 } from './presentation/pages/Marathons/Badgirl/Day3';
+import { Instructions } from './presentation/pages/Marathons/Badgirl/Instructions';
+import { Day4 } from './presentation/pages/Marathons/Badgirl/Day4';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path={RoutesMap.Quiz} element={<Quiz />} />
         <Route path={RoutesMap.Day1} element={<Day1 />} />
         <Route path={RoutesMap.Day2} element={<Day2 />} />
+        <Route path={RoutesMap.Day3} element={<Day3 />} />
+        <Route path={RoutesMap.Day4} element={<Day4 />} />
+        <Route path={RoutesMap.Instructions} element={<Instructions />} />
       </Routes>
     </BrowserRouter>
   )

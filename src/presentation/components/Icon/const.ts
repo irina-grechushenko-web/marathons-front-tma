@@ -11,6 +11,8 @@ import { ReactComponent as LampOnIcon } from './assets/lamp-on.svg';
 import { ReactComponent as HeaderLineIcon } from './assets/header-line.svg';
 import { ReactComponent as QuoteDownIcon } from './assets/quote-down.svg';
 import { ReactComponent as QuoteUpIcon } from './assets/quote-up.svg';
+import { ReactComponent as LikeIcon } from './assets/like.svg';
+import { ReactComponent as DislikeIcon } from './assets/dislike.svg';
 import type { IconName } from './types';
 
 export const icons: Record<IconName, React.FC<React.SVGProps<SVGSVGElement>>> = {
@@ -27,4 +29,6 @@ export const icons: Record<IconName, React.FC<React.SVGProps<SVGSVGElement>>> = 
   "header-line": HeaderLineIcon,
   "quote-down": QuoteDownIcon,
   "quote-up": QuoteUpIcon,
+  like: LikeIcon,
+  dislike: DislikeIcon,
 };

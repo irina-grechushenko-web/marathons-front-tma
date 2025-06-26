@@ -33,3 +33,6 @@
   color: var(--text-white);
   margin: 0 14px;
 }
+.small {
+  font-size: 5.5rem;
+}
