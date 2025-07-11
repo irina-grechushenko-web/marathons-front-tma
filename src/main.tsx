@@ -6,7 +6,7 @@ import './styles/index.css'
 const root = createRoot(document.getElementById('root')!)
 
  try {
-    await TMAInit()
+    TMAInit()
     root.render(<App />)
   } catch (e) {
     root.render(<div>Откройте через Telegram</div>)
