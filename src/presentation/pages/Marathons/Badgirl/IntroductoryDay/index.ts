@@ -1,0 +1,1 @@
+export { IntroductoryDay } from './IntroductoryDay';

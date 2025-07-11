@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--neutral-300);
+  padding-bottom: 50px;
+}
+
+.blockHeader {
+  font-weight: 800;
+}
+
+.svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.button {
+  height: 56px;
+  margin: 10px 14px;
+  background-color: var(--accent-300);
+  color: var(--text-white);
+  border-radius: 34px;
+  font-weight: 800;
+  font-size: 1.7rem;
+  z-index: 1;
+}
+
+.textWrapper {
+  display: flex;
+  gap: 10px;
+  margin: 20px 14px;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--neutral-500);
+  z-index: 1;
+}
+
+.textWrapper p {
+  flex: 1;
+  margin: 0;
+}

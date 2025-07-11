@@ -1,7 +1,34 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Основные цвета */
+  --primary-200: #184A3F;
+  --primary-100: #115C4B;
+
+  /* Акцентные (желтые) */
+  --accent-300: #FDAE37;
+  --accent-200: #FFC163;
+  --accent-100: #FFCF87;
+
+  /* Нейтральные (бежевые) */
+  --neutral-500: #5C2311;
+  --neutral-400: #CDB4A2;
+  --neutral-300: #F4E7D7;
+  --neutral-200: #F9EEE0;
+  --neutral-100: #FFF5E8;
+
+  /* Текст */
+  --text-white: #FFFFFF;
+
+  --text-xs: 1.3rem;    /* 13px */
+  --text-sm: 1.5rem;    /* 15px */
+  --text-base: 1.6rem;  /* 16px */
+  --text-lg: 1.7rem;    /* 17px */
+  --text-xl: 3rem;      /* 30px */
+  --text-xxl: 4rem;     /* 40px */
+
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,6 +38,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+html {
+  /* 10px */
+  font-size: 62.5%;
 }
 
 a {
@@ -24,6 +63,7 @@ a:hover {
 
 body {
   margin: 0;
+  font-size: var(--text-base);
   min-width: 320px;
   min-height: 100vh;
 }

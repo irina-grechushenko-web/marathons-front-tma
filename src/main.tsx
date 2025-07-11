@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
+import { TMAInit } from '../tma-init.ts'
 import './styles/index.css'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = createRoot(document.getElementById('root')!)
+
+ try {
+    await TMAInit()
+    root.render(<App />)
+  } catch (e) {
+    root.render(<div>Откройте через Telegram</div>)
+    console.error(e)
+  }

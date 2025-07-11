@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--accent-300);
+  color: var(--neutral-500);
+  border-radius: 34px;
+  margin: 14px 14px 0px 14px;
+  z-index: 1;
+}
+
+.cardHeader {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 24px 24px 0 24px;
+  margin-bottom: 20px;
+}
+.cardSubHeader {
+  padding: 0px 24px; 
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: var(--text-lg);
+  white-space: pre-line;
+}
+.cardMain {
+  color: var(--neutral-500);
+  background-color: var(--text-white);
+  border-radius: 34px;
+  padding: 24px 24px;
+  font-weight: 500;
+  font-size: var(--text-lg);
+}

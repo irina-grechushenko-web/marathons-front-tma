@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--neutral-300);
+  padding-bottom: 50px;
+}
+
+.svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.cardWrapper p {
+  flex: 1;
+  margin: 0;
+}
+
+.textWrapper {
+  margin: 20px 41px 20px 41px;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--neutral-500);
+}
+
+.textWrapper p {
+  margin: 0;
+}
+
+.ul {
+  font-size: 1.5rem;
+  padding-left: 17px;
+  margin-bottom: 0;
+}
+
+.ul li {
+  margin-bottom: 5px;
+}

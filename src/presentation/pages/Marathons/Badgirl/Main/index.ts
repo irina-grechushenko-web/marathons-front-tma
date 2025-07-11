@@ -1,0 +1,1 @@
+export { Badgirl } from './Badgirl';
