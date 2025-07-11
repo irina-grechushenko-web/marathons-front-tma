@@ -4,7 +4,8 @@
 }
 
 .card--pending a,
-.card--close a {
+.card--close a,
+.card--update a {
   cursor: default;
   text-decoration: none;
 }
@@ -25,8 +26,10 @@
 .card--finished a {
   background-color: var(--neutral-100);
 }
+
 .card--pending a,
-.card--close a {
+.card--close a,
+.card--update a {
   pointer-events: none;
   user-select: none;
   color: var(--neutral-400);

@@ -4,7 +4,7 @@ import { Icon } from '../Icon';
 import type { IconName } from '../Icon/types';
 import classNames from 'classnames';
 
-type Status = 'open' | 'close' | 'pending' | 'finished';
+type Status = 'open' | 'close' | 'pending' | 'finished' | 'update';
 
 interface MarathonItemProp {
   title: string;
@@ -23,6 +23,7 @@ export const MarathonItem: React.FC<MarathonItemProp> = ({title, desc, route, st
             <div className={styles.desc}>{desc}</div>
             {iconName && <Icon className={styles.icon} name={iconName}/>}
             {status === 'pending' && <Icon className={styles.icon} name={'timer'}/>}
+            {status === 'update' && <Icon className={styles.icon} name={'timer'}/>}
             {status === 'close' && <Icon className={styles.icon} name={'lock'}/>}
           </Link>
         </div>

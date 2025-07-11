@@ -8,5 +8,9 @@ export const Routes = {
   Day2: '/bad-girl/days/2',
   Day3: '/bad-girl/days/3',
   Day4: '/bad-girl/days/4',
+  Day5: '/bad-girl/days/5',
   Instructions: '/bad-girl/days/instructions',
+  Tutorial: '/bad-girl/days/tutorial',
+  IntroductoryDay: '/bad-girl/days/introductory-day',
+  Payment: '/bad-girl/payment',
 } as const;

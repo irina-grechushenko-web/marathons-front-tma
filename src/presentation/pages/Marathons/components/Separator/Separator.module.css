@@ -1,6 +1,8 @@
 .separator {
   position: relative;
-  height: 210px;
+  min-height: 210px;
+  max-height: fit-content;
+  padding: 10px;
   background-color: var(--accent-300);
   color: var(--text-white);
   font-size: 3rem;
@@ -20,4 +22,8 @@
   position: absolute;
   height: 100%;
   z-index: 0;
+}
+.separator p {
+  margin: 0;
+  margin-bottom: 15px;
 }

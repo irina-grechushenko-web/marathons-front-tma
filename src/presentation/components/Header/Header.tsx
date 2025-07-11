@@ -3,6 +3,8 @@ import styles from './Header.module.css';
 import { lines, type LineName } from './Line';
 import { useEffect } from 'react';
 import { miniApp } from '@telegram-apps/sdk-react';
+import userStore from '@src/application/store/userStore';
+import { observer } from 'mobx-react-lite';
 interface HeaderProp {
   title: string;
   desc: string;
@@ -10,7 +12,7 @@ interface HeaderProp {
   background: LineName;
 }
 
-export const Header: React.FC<HeaderProp> = ({title, desc, avatar = false, background = 'main'}) => {
+export const Header: React.FC<HeaderProp> = observer(({title, desc, avatar = false, background = 'main'}) => {
   const LineComponent = lines[background];
 
   useEffect(()=>{
@@ -29,10 +31,10 @@ export const Header: React.FC<HeaderProp> = ({title, desc, avatar = false, backg
 
   return (
     <div className={classNames(styles.wrapper, styles[`wrapper--${background}`])}>
-      {avatar && <div className={styles.avatar}></div>}
+      {avatar && <div className={styles.avatar}><img src={userStore.data?.initData.user.photoUrl}/></div>}
       <div className={classNames(styles.title, styles[`title--${background}`])}>{title}</div>
       <div className={classNames(styles.description, styles[`desc--${background}`])}>{desc}</div>
       <LineComponent className={classNames(styles.line, styles[`line--${background}`])} />
     </div>
   );
-}
+})

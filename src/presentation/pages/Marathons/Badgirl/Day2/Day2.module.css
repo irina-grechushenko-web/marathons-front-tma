@@ -34,17 +34,6 @@
   margin: 0;
 }
 
-.button {
-  height: 56px;
-  margin: 10px 14px;
-  background-color: var(--accent-300);
-  color: var(--text-white);
-  border-radius: 34px;
-  font-weight: 800;
-  font-size: 1.7rem;
-  z-index: 1;
-}
-
 .ul {
   font-size: 1.5rem;
   padding-left: 17px;

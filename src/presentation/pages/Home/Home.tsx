@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { Routes } from '@src/routes';
 import styles from './Home.module.css';
 import { Icon } from '@src/presentation/components/Icon';
+import userStore from '@src/application/store/userStore';
+import { observer } from 'mobx-react-lite';
 
-export const Home = () => {
+export const Home = observer(() => {
 
   return (
     <div className={styles.wrapper}>
@@ -26,7 +28,7 @@ export const Home = () => {
                 Перестань быть удобной,<br/>
                 начни играть по своим правилам
               </div>
-              <div className={styles.count}>{'0'}/6</div>
+              <div className={styles.count}>{userStore.completedDaysCount}/6</div>
             </div>
             <Icon name={'arrowRightFill'}  className={styles.icon}/>
           </Link>
@@ -34,4 +36,4 @@ export const Home = () => {
       </div>
     </div>
   );
-}
+});

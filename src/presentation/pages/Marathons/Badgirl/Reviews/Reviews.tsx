@@ -24,36 +24,6 @@ export const Reviews = () => {
             Спасибо Ира, ванлав.
           </div>
         </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-            Елизавета Васильева
-          </div>
-          <div className={styles.text}>
-            Потрясно не вероятный марафон, стала другим человеком, 
-            слетала на луну, посмотрела космос, нашла мужа, родила 
-            детей, а теперь я руководитель компании орифлейм. 
-            Спасибо Ира, ванлав.
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-            Елизавета Васильева
-          </div>
-          <div className={styles.text}>
-            Потрясно не вероятный марафон, стала другим человеком, 
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-            Елизавета Васильева
-          </div>
-          <div className={styles.text}>
-            Потрясно не вероятный марафон, стала другим человеком, 
-            слетала на луну, посмотрела космос, нашла мужа, родила 
-            детей, а теперь я руководитель компании орифлейм. 
-            Спасибо Ира, ванлав.
-          </div>
-        </div>
       </div>
     </div>
   );

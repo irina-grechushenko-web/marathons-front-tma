@@ -8,6 +8,8 @@ import { Separator } from '../../components/Separator';
 import { useEffect } from 'react';
 import { miniApp } from '@telegram-apps/sdk-react';
 import { Header } from '../../components/Header';
+import { Button } from '../../components/Button';
+import userStore from '@src/application/store/userStore';
 
 export const Day2 = () => {
 
@@ -18,7 +20,7 @@ export const Day2 = () => {
   return (
     <div className={styles.wrapper}>
       <svg className={styles.svg} width="100%" height="259" viewBox="0 0 375 259" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M75.7502 312C128.945 232.888 72.0043 216.309 -1.58585 223.322C-45.83 227.54 -50.0866 173.696 -12.5435 154.188C33.1721 126.404 83.3633 156.413 129.76 164.544C162.195 165.407 176.886 132.432 152.843 110.348C133.506 93.672 115.653 68.865 128.994 42.952C147.382 5.03054 197.804 14.2678 220.012 44.3984C240.978 64.0154 253.335 125.431 284.748 117.616C300.011 113.812 298.503 97.9746 303.246 86.1728C314.143 56.8079 356.928 51.2291 375 76.8261" stroke="#F9EEE0" stroke-width="36" stroke-miterlimit="10" stroke-linecap="round"/>
+        <path d="M75.7502 312C128.945 232.888 72.0043 216.309 -1.58585 223.322C-45.83 227.54 -50.0866 173.696 -12.5435 154.188C33.1721 126.404 83.3633 156.413 129.76 164.544C162.195 165.407 176.886 132.432 152.843 110.348C133.506 93.672 115.653 68.865 128.994 42.952C147.382 5.03054 197.804 14.2678 220.012 44.3984C240.978 64.0154 253.335 125.431 284.748 117.616C300.011 113.812 298.503 97.9746 303.246 86.1728C314.143 56.8079 356.928 51.2291 375 76.8261" stroke="#F9EEE0" strokeWidth="36" strokeMiterlimit="10" strokeLinecap="round"/>
       </svg>
 
       <BackButton />
@@ -101,7 +103,7 @@ export const Day2 = () => {
         </ul>
       </Card>
 
-      <button className={styles.button}>Завершить день 2 {'>'}</button>
+      {userStore.data?.badGirl.day2 === 'open' && <Button currentDayKey='day2' updateDayKey='day3'>Завершить второй день {'>'}</Button> }
     </div>
   );
 };

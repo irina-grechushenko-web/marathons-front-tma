@@ -13,6 +13,10 @@ import { ReactComponent as QuoteDownIcon } from './assets/quote-down.svg';
 import { ReactComponent as QuoteUpIcon } from './assets/quote-up.svg';
 import { ReactComponent as LikeIcon } from './assets/like.svg';
 import { ReactComponent as DislikeIcon } from './assets/dislike.svg';
+import { ReactComponent as ArrowRightNonCircleIcon } from './assets/arrow-right-noncircle.svg';
+import { ReactComponent as LinePaymentUpIcon } from './assets/linePaymentUp.svg';
+import { ReactComponent as LinePaymentDownIcon } from './assets/linePaymentDown.svg';
+import { ReactComponent as StarIcon } from './assets/star.svg';
 import type { IconName } from './types';
 
 export const icons: Record<IconName, React.FC<React.SVGProps<SVGSVGElement>>> = {
@@ -31,4 +35,8 @@ export const icons: Record<IconName, React.FC<React.SVGProps<SVGSVGElement>>> = 
   "quote-up": QuoteUpIcon,
   like: LikeIcon,
   dislike: DislikeIcon,
+  arrowRightNonCircle: ArrowRightNonCircleIcon,
+  linePaymentUp: LinePaymentUpIcon,
+  linePaymentDown: LinePaymentDownIcon,
+  star: StarIcon,
 };

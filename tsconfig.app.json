@@ -27,7 +27,8 @@
     "paths": {
       "@src/*": ["*"],
       "@presentation/*": ["presentation/*"],
-      "@infrastructure/*": ["infrastructure/*"]
+      "@infrastructure/*": ["infrastructure/*"],
+      "@domain/*": ["domain/*"]
     }
   },
   "include": ["src"]

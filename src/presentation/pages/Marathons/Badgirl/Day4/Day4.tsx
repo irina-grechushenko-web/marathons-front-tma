@@ -8,6 +8,8 @@ import { miniApp } from '@telegram-apps/sdk-react';
 import { Header } from '../../components/Header';
 import { Paragraphs } from '../../components/Paragraphs';
 import { Icon } from '@src/presentation/components/Icon';
+import userStore from '@src/application/store/userStore';
+import { Button } from '../../components/Button';
 
 export const Day4 = () => {
 
@@ -68,7 +70,7 @@ export const Day4 = () => {
       </Paragraphs>
 
       <Card
-        subHeader={'Возьми листик, ручку, выдели 15 минут времени, и ответь на все вопросы письменно.'}
+        header={'Возьми листик, ручку, выдели 15 минут времени, и ответь на все вопросы письменно.'}
       >
         <div className={styles.container}>
           <Icon name={'message-question'}/>
@@ -156,12 +158,11 @@ export const Day4 = () => {
         </div>
       </Card>
 
-      
       <Paragraphs>
         <p>Какой из шагов тебе понравился, и помог больше всего</p>
         <p>Вина — это просто привычка.<br/>А привычки можно менять.</p>
       </Paragraphs>
-      <button className={styles.button}>Завершить 4 день {'>'}</button>
+      {userStore.data?.badGirl.day4 === 'open' && <Button currentDayKey='day4' openMarathonDay='tutorial' updateDayKey='day5'>Завершить четвертый день {'>'}</Button> }
     </div>
   );
 };

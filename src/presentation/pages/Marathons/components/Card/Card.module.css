@@ -2,7 +2,7 @@
   background-color: var(--accent-300);
   color: var(--neutral-500);
   border-radius: 34px;
-  margin: 14px 14px;
+  margin: 14px 14px 0px 14px;
   z-index: 1;
 }
 

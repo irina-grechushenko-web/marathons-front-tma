@@ -14,4 +14,8 @@ export type IconName =
   | 'quote-up'
   | 'like'
   | 'dislike'
+  | 'arrowRightNonCircle'
+  | 'linePaymentUp'
+  | 'linePaymentDown'
+  | 'star'
   ;

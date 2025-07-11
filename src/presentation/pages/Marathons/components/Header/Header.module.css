@@ -24,6 +24,8 @@
   font-weight: 800;
   color: var(--text-white);
   z-index: 1;
+  text-align: center;
+  line-height: 0.9;
 }
 
 .h2 {
