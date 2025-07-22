@@ -24,6 +24,7 @@ export const Result = observer(() => {
       <div className={styles.desc}>{result.description}</div>
       {userStore.data?.badGirl.introductoryDay === 'close' && <Link to={Routes.Payment} className={styles.link}>Пройти марафон</Link>}
       {userStore.data?.badGirl.introductoryDay === 'open' && <Link to={Routes.IntroductoryDay} className={styles.link}>Пройти марафон</Link>}
+      {userStore.data?.badGirl.introductoryDay === 'pending' && <Link to={Routes.Badgirl} className={styles.link}>Вернуться к марафону</Link>}
       <Icon name={'resultLine1'} className={styles.line1} />
       <Icon name={'resultLine2'} className={styles.line2} />
     </div>
