@@ -98,7 +98,7 @@ export const Day1 = () => {
           и с большей вероятностью выдаст их вам при следующем «автоматическом да».
         </p>
       </div>
-      {userStore.data?.badGirl.day1 === 'open' && <Button currentDayKey='day1' updateDayKey='day2' audio1>Завершить первый день {'>'}</Button> }
+      {userStore.data?.badGirl.day1 === 'open' && <Button currentDayKey='day1' updateDayKey='day2'>Завершить первый день {'>'}</Button> }
     </div>
   );
 };

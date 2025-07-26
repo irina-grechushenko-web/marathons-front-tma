@@ -113,7 +113,7 @@ export const Day3 = () => {
         <p>Открыв глаза, запишите первое, что пришло в голову</p>
       </Card>
 
-      {userStore.data?.badGirl.day3 === 'open' && <Button currentDayKey='day3' openMarathonDay='instructions' updateDayKey='day4' audio2>Завершить третий день {'>'}</Button> }
+      {userStore.data?.badGirl.day3 === 'open' && <Button currentDayKey='day3' openMarathonDay='instructions' updateDayKey='day4'>Завершить третий день {'>'}</Button> }
     </div>
   );
 };
